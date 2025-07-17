@@ -1,5 +1,4 @@
-# Challenge Ai
-# Reto Técnico: Detección de Fraudes en Transacciones Bancarias
+# Challenge AI: Detección de Fraudes en Transacciones Bancarias
 
 ## Objetivo
 

@@ -91,7 +91,7 @@ Sigue estos pasos para replicar la solución.
 
 *   **Endpoint:** `[credit-risk-classifier-endpoint-final]`
 *   **Video de Presentación:** [Ver la demostración del proyecto aquí](https://www.youtube.com/watch?v=abcdef123)
-*   **Presentación:** Presentación detallada, con explicación y resumen del pipeline en el [informe adjunto (PDF)](informe_challenge.pdf)
+*   **Presentación:** Presentación detallada, con explicación y resumen del pipeline en el [informe adjunto (PDF)](docs/informe_challenge.pdf)
 
 ### Captura de Pantalla del Endpoint
 

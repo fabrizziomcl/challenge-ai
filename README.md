@@ -6,7 +6,7 @@ Este repositorio contiene la solución completa para el "Challenge AI", un proye
 
 La solución implementa un pipeline de MLOps moderno y robusto, dividido en las siguientes fases:
 
-1.  **Primera Fase: Generación de Descripciones:** Se utiliza el dataset inicial (`credir_risk_reto.csv`) y, a través del notebook `generate_descriptions.ipynb`, se invoca a un modelo generativo (Amazon Micro Nova) en Amazon Bedrock para crear una columna `description` para cada transacción. Esta descripción es un resumen en lenguaje natural orientado al riesgo crediticio del perfil.
+1.  **Primera Fase: Generación de Descripciones:** Se utiliza el dataset inicial (`credir_risk_reto.csv`) y, a través del notebook `generate_descriptions.ipynb`, se invoca a un modelo generativo (Amazon Nova Micro) en Amazon Bedrock para crear una columna `description` para cada transacción. Esta descripción es un resumen en lenguaje natural orientado al riesgo crediticio del perfil.
 
 2.  **Segunda Fase: Etiquetado Automático (Zero-Shot Classification):** Utilizando las descripciones generadas, el notebook `generate_targets.ipynb` vuelve a invocar a Bedrock. Esta vez, se le instruye al modelo para que actúe como un clasificador y asigne una etiqueta de riesgo (`target`) a cada descripción, clasificándolas como "**good risk**" o "**bad risk**". Se implementó una lógica de reintentos con *exponential backoff* para manejar el throttling de la API de Bedrock de manera eficiente.
 
@@ -43,7 +43,7 @@ Sigue estos pasos para replicar la solución.
 *   Una cuenta de AWS con permisos para **S3**, **Amazon SageMaker** y **Amazon Bedrock**.
 *   Las cuotas de servicio de SageMaker apropiadas para instancias `ml.m5.large` de entrenamiento.
 *   El dataset inicial `credir_risk_reto.csv`.
-*   Tener habilitado el modelo Amazon Nova Prime.
+*   Tener habilitado el modelo Amazon Nova Micro.
 
 ### Pasos de Ejecución
 

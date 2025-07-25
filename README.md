@@ -33,7 +33,6 @@ La solución implementa un pipeline de MLOps moderno y robusto, dividido en las 
 │
 ├── README.md                       # Este archivo
 ├── requirements.txt                # Dependencias de Python para el entorno de entrenamiento
-└── [INFORME_CHALLENGE.pdf]         # Tu informe detallado
 ```
 
 ## Cómo Ejecutar el Proyecto
